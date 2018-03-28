@@ -56,7 +56,7 @@ class color:
 
 
 def maccom(bssid):
-	file_ = open(os.getcwd()+'\utils\macers.txt', 'r')
+	file_ = open(os.getcwd()+'/utils/macers.txt', 'r')
 	for line in file_.readlines():
 		if line.strip("\n").split(" ~ ")[0].lower() == bssid.lower()[0:9]+"xx:xx:xx":
 			file_.close()
